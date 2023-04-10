@@ -1,0 +1,85 @@
+body {
+  font-family: 'Yomogi', cursive;
+  background: rgba(242, 242, 242, .6);
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box
+}
+
+/*JUMBOTRON*/
+.jumbotron {
+  height: 100vh; /*height to 100% of view height*/
+  background: #360464; /*background color to blue*/
+  margin-bottom: 0; /*no bottom margin*/
+
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron-text {
+  /*TAGLINE UNDER NAME*/
+  font-weight: 400;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.jumbotron-text h1 {
+  /*YOUR NAME*/
+  font-weight: 800;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.jumbotron-text p {
+  margin: 0;
+}
+
+/*CONTENT*/
+.container {
+  /*sets up flex box*/
+  display: flex;
+  flex-direction: column;
+}
+
+.ul-social {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.ul-social li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.ul-social li img {
+  height: 2rem;
+}
+
+.icon {
+  transition: .2s ease all;
+  filter: invert(1);
+}
+
+.icon:hover {
+  filter: invert(41%) sepia(94%) saturate(1927%) hue-rotate(285deg) brightness(92%) contrast(106%);
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 420px) {
+  .jumbotron-text {
+    padding-top: 50px;
+  }
+  .ul-social li img {
+    height: 1.5rem;
+  }
+  .jumbotron-text {
+    font-size: 1.5em;
+  }
+}
